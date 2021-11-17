@@ -35,7 +35,13 @@ model=xgb.XGBClassifier(random_state=3,learning_rate=0.01)
 model.fit(X_train, y_train)
 
 
+from sklearn.ensemble import GradientBoostingClassifier
+
+gbc = GradientBoostingClassifier(n_estimators=100, learning_rate=1.0,max_depth=1, random_state=0).fit(X_train, y_train)
+
+
 from joblib import dump
 dump(model, 'model/Model_XGboost')
 dump(classifier,'model/Model_tree_classifier')
+dump(gbc,'model/gbc')
 
