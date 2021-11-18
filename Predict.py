@@ -4,7 +4,7 @@
 import numpy
 import pandas as pd
 
-X = pd.read_csv("X_test_prod_ready")
+X = pd.read_csv("X_test_prod_ready.csv")
 
 X = X.drop(columns='Unnamed: 0')
 

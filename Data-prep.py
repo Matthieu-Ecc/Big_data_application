@@ -44,10 +44,10 @@ df_test = df_test[X_train.columns]
 df_test_prod = df_test.dropna()
 
 
-X_train.to_csv(path_or_buf="data/X_train")
-X_test.to_csv(path_or_buf="data/X_test")
-y_train.to_csv(path_or_buf="data/y_train")
-y_test.to_csv(path_or_buf="data/y_test")
-df_test_prod.to_csv(path_or_buf="data/X_test_prod")
+X_train.to_csv(path_or_buf="data/X_train.csv")
+X_test.to_csv(path_or_buf="data/X_test.csv")
+y_train.to_csv(path_or_buf="data/y_train.csv")
+y_test.to_csv(path_or_buf="data/y_test.csv")
+df_test_prod.to_csv(path_or_buf="data/X_test_prod.csv")
 
 

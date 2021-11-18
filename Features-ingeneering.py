@@ -6,11 +6,11 @@ from sklearn import preprocessing
 le = preprocessing.LabelEncoder()
 
 
-X_train = pd.read_csv("data/X_train",index_col=False)
-X_test  = pd.read_csv("data/X_test",index_col=False)
-y_train = pd.read_csv("data/y_train",index_col=False)
-y_test  = pd.read_csv("data/y_test",index_col=False)
-X_test_prod = pd.read_csv("data/X_test_prod",index_col=False)
+X_train = pd.read_csv("data/X_train.csv",index_col=False)
+X_test  = pd.read_csv("data/X_test.csv",index_col=False)
+y_train = pd.read_csv("data/y_train.csv",index_col=False)
+y_test  = pd.read_csv("data/y_test.csv",index_col=False)
+X_test_prod = pd.read_csv("data/X_test_prod.csv",index_col=False)
 
 
 X_train = X_train.drop(columns=['Unnamed: 0','SK_ID_CURR'])
@@ -24,7 +24,7 @@ y_test  = y_test.drop(columns='Unnamed: 0')
 
 
 
-def EncodeDataFramelabel(df : pd.Dataframe) -> pd.DataFrame:
+def EncodeDataFramelabel(df : pd.DataFrame) -> pd.DataFrame :
     count=0
     for type in df.dtypes:
         if type != "int64" and type != "float64" :
@@ -53,11 +53,11 @@ X_test = pd.DataFrame(x__scaled)
 
 X_test_prod = pd.DataFrame(min_max_scaler.fit_transform(X_test_prod.values))
 
-X_train.to_csv(path_or_buf="data/X_train_ready")
-X_test.to_csv(path_or_buf="data/X_test_ready")
+X_train.to_csv(path_or_buf="data/X_train_ready.csv")
+X_test.to_csv(path_or_buf="data/X_test_ready.csv")
 
-X_test_prod.to_csv(path_or_buf="data/X_test_prod_ready")
+X_test_prod.to_csv(path_or_buf="data/X_test_prod_ready.csv")
 
-y_train.to_csv(path_or_buf="data/y_train_ready")
-y_test.to_csv(path_or_buf="data/y_test_ready")
+y_train.to_csv(path_or_buf="data/y_train_ready.csv")
+y_test.to_csv(path_or_buf="data/y_test_ready.csv")
 
