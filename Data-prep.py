@@ -8,6 +8,9 @@ df_train = pd.read_csv("data/application_train.csv")
 df_test = pd.read_csv("data/application_test.csv")
 
 def DelNanColumns(df : pd.DataFrame,tsh : int) -> pd.DataFrame:
+
+    # deleted the row with to many nan value based on a threshold
+    
     cpt=0
     for i in df.isnull().sum():
         verif = i/df.shape[0]*100

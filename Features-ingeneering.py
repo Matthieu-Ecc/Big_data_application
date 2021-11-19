@@ -25,6 +25,9 @@ y_test  = y_test.drop(columns='Unnamed: 0')
 
 
 def EncodeDataFramelabel(df : pd.DataFrame) -> pd.DataFrame :
+
+    # encode eache colone wich is not a number
+
     count=0
     for type in df.dtypes:
         if type != "int64" and type != "float64" :
