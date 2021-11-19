@@ -19,14 +19,23 @@ Gradient_boosting_classifiers = load('model/gbc')
 
 
 def predictByXgboost(X : pd.DataFrame) -> numpy.ndarray:
+
+    """Produce a prediction set with features in input and using the xgboost model """
+
     prediction = xgboost.predict(X)
     return prediction
 
 def predictByTreeClassifier(X : pd.DataFrame) -> numpy.ndarray:
+    
+    """Produce a prediction set with features in input and using the treeclassifier model """
+
     prediction = tree_classifier.predict(X)
     return prediction
 
 def predictByGDC(X : pd.DataFrame) -> numpy.ndarray:
+
+    """Produce a prediction set with features in input and using the gradient boosting classifier model """
+
     prediction = Gradient_boosting_classifiers.predict(X)
     return prediction
 
