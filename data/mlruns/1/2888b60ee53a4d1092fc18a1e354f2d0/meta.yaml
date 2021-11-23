@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/panda/Desktop/M2-cours-tp-etc/big%20data%20application/projet/Big_data_application/data/mlruns/1/2888b60ee53a4d1092fc18a1e354f2d0/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+name: ''
+run_id: 2888b60ee53a4d1092fc18a1e354f2d0
+run_uuid: 2888b60ee53a4d1092fc18a1e354f2d0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1637656684437
+status: 1
+tags: []
+user_id: panda

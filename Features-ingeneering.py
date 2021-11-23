@@ -28,12 +28,8 @@ def EncodeDataFramelabel(df : pd.DataFrame) -> pd.DataFrame :
 
     """encode eache colone wich is not a number and return a new data frame"""
 
-    count=0
-    for type in df.dtypes:
-        if type != "int64" and type != "float64" :
-            #print(type, count)
-            df.iloc[:, count]= le.fit_transform(df.iloc[:, count])
-        count = count+1
+    df = df.apply(le.fit_transform)
+
     return df  
 
 
