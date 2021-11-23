@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/panda/Desktop/M2-cours-tp-etc/big%20data%20application/projet/Big_data_application/mlflow/gradient_boosting/mlruns/0/3008ac9b8e7e41f3a5c4f08ee7519b85/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: 3008ac9b8e7e41f3a5c4f08ee7519b85
+run_uuid: 3008ac9b8e7e41f3a5c4f08ee7519b85
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1637660404690
+status: 1
+tags: []
+user_id: panda
