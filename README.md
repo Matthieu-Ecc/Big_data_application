@@ -83,3 +83,24 @@ Then copy the __application_train.csv__ and the __application_test.csv__ in the 
 
 	from Big_data_application_folder >> python Predict.py
 
+<br>
+<br>
+
+## MLFlow execution
+
+### Navigate throught __mlflow__ folder then choose which model you want to deploy with MLFlow.
+### For each model you will find : 
+	* conda.yaml >> contain the conda environnement necessary to process the training
+	* MLproject >> contain the parameters and specify the environnement
+	* train python script >> the python script used for the training phase
+### Now you can test the model by simply executing from a command prompt the following command
+	python train_{model_name} {parameters}
+
+### To execute the training with MLFlow simply execute this command line from the command prompt : 
+	mlflow run . -P {parameters}
+	
+### Then execute the UI to monitor and track the execution
+	mlflow ui 
+
+### Now we are able to serve the model to make prediction as a local REST server 
+	mlflow models serve -m mlruns\0\{RUN_ID}\artifacts\model_{name}\ -p 1234
