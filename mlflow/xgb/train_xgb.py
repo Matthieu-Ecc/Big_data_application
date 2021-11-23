@@ -24,10 +24,10 @@ if __name__ == "__main__":
     np.random.seed(40)
     
     # The predicted column is "quality" which is a scalar from [3, 9]
-    X_train = pd.read_csv(f"{CURRENT_FOLDER}/data/X_train_ready.csv")
-    X_test  = pd.read_csv(f"{CURRENT_FOLDER}/data/X_test_ready.csv")
-    y_train = pd.read_csv(f"{CURRENT_FOLDER}/data/y_train_ready.csv")
-    y_test  = pd.read_csv(f"{CURRENT_FOLDER}/data/y_test_ready.csv")
+    X_train = pd.read_csv("../../data/X_train_ready.csv")
+    X_test  = pd.read_csv("../../data/X_test_ready.csv")
+    y_train = pd.read_csv("../../data/y_train_ready.csv")
+    y_test  = pd.read_csv("../../data/y_test_ready.csv")
     X_train = X_train.drop(columns='Unnamed: 0')
     X_test = X_test.drop(columns='Unnamed: 0')
     y_train = y_train.drop(columns='Unnamed: 0')
