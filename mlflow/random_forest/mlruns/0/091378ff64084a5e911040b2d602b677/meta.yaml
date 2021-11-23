@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Numan/Desktop/Big_data_application/mlflow/random_forest/mlruns/0/091378ff64084a5e911040b2d602b677/artifacts
+end_time: 1637658430128
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: 091378ff64084a5e911040b2d602b677
+run_uuid: 091378ff64084a5e911040b2d602b677
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1637658406311
+status: 3
+tags: []
+user_id: Numan

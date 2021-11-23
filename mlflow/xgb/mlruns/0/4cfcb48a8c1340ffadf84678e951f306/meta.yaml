@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/Numan/Desktop/Big_data_application/mlflow/xgb/mlruns/0/4cfcb48a8c1340ffadf84678e951f306/artifacts
+end_time: 1637662345878
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: 4cfcb48a8c1340ffadf84678e951f306
+run_uuid: 4cfcb48a8c1340ffadf84678e951f306
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1637662334142
+status: 3
+tags: []
+user_id: Numan
