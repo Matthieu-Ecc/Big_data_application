@@ -1,0 +1,9 @@
+name: rf_big_data_application_sahnou_eccher
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      max_depth: {type: int, default: 3}
+    command: "python train_random_forest.py {max_depth}"

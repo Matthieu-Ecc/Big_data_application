@@ -1,0 +1,11 @@
+name: gbc_big_data_application_sahnou_eccher
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      lr: {type: float, default: 0.01}
+      max_depth: {type: int, default: 10}
+      n_estimator: {type: int, default: 100}
+    command: "python train_gradient_boosting.py {n_estimator} {lr} {max_depth}"

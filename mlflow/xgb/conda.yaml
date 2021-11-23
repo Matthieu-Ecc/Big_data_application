@@ -1,0 +1,13 @@
+name: xgb_big_data_application_sahnou_eccher
+channels:
+  - conda-forge
+dependencies:
+  - python=3.7
+  - pip
+  - pip:
+      - scikit-learn==0.23.2
+      - mlflow>=1.0
+      - pandas
+      - numpy
+      - xgboost
+      - Sphinx

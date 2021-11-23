@@ -1,0 +1,10 @@
+name: xgb_big_data_application_sahnou_eccher
+
+conda_env: conda.yaml
+
+entry_points:
+  main:
+    parameters:
+      random_state: {type: int, default: 5}
+      lr: {type: float, default: 0.01}
+    command: "python train_xgb.py {random_state} {lr}"
