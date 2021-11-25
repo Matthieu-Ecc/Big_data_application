@@ -13,7 +13,15 @@ from joblib import load
 
 def predictByXgboost(X : pd.DataFrame) -> numpy.ndarray:
 
-    """Produce a prediction set with features in input and using the xgboost model """
+    """Produce a prediction set with features in input and using the xgboost model
+    
+        :param arg1: the dataframe on wich you want to execute the supression
+        :type arg1: pandas.DataFrame
+        :returns: return tab with the predicted values
+        :rtype: numpy.ndarray 
+    
+    
+    """
 
     xgboost = load('model/Model_XGboost')
 
@@ -22,7 +30,15 @@ def predictByXgboost(X : pd.DataFrame) -> numpy.ndarray:
 
 def predictByTreeClassifier(X : pd.DataFrame) -> numpy.ndarray:
     
-    """Produce a prediction set with features in input and using the treeclassifier model """
+    """Produce a prediction set with features in input and using the treeclassifier model
+
+        :param arg1: the dataframe on wich you want to execute the supression
+        :type arg1: pandas.DataFrame
+        :returns: return tab with the predicted values
+        :rtype: numpy.ndarray 
+    
+    
+    """
     
     tree_classifier = load('model/Model_tree_classifier')
 
@@ -31,7 +47,15 @@ def predictByTreeClassifier(X : pd.DataFrame) -> numpy.ndarray:
 
 def predictByGBC(X : pd.DataFrame) -> numpy.ndarray:
 
-    """Produce a prediction set with features in input and using the gradient boosting classifier model """
+    """Produce a prediction set with features in input and using the gradient boosting classifier model 
+        
+        :param arg1: the dataframe on wich you want to execute the supression
+        :type arg1: pandas.DataFrame
+        :returns: return tab with the predicted values
+        :rtype: numpy.ndarray 
+    
+    
+    """
 
     Gradient_boosting_classifiers = load('model/gbc')
 

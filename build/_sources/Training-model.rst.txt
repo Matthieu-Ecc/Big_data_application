@@ -1,0 +1,7 @@
+Training\-model module
+======================
+
+.. automodule:: Training-model
+   :members:
+   :undoc-members:
+   :show-inheritance:
